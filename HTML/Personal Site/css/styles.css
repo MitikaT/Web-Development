@@ -1,0 +1,21 @@
+/*priority order, inline css > internal css > external css*/
+
+body{
+    background-color: #6D8B74;
+}
+
+h1{
+    color: #1A3C40;
+}
+
+h3{
+    color: #1A3C40;
+}
+
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #D0C9C0;
+    border-width: 5px;
+    width: 30%;
+}
