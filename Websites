@@ -1,0 +1,10 @@
+Accessing Websites 
+    1. Your browser sends a message to your ISP (Internet Service Provider).
+    2. Your ISP relays the message to a DNS (Domain Name System) server. 
+    3. The DNS server looks up the IP (Internet Protocol) address of the website you want to access and sends it back to your browser.
+    4. You send a direct request to this address (has the server of the website) through your ISP via the Internet backbone.
+    5. The server sends the files back and the website is shown.
+
+HTML (Hypertext Markup Language) – responsible for the structure of the website
+CSS (Cascading Style Sheets) – responsible for the style of the website
+JS (JavaScript) – responsible for the behaviour of the website
