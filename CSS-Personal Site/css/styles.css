@@ -1,0 +1,201 @@
+/*box model
+the padding provides spacing between the content of the element and its border
+the margin provides spacing between the border of the element and other outer elements
+the padding, border and margin dimensions are added on to the original dimensions of the element
+
+display property
+block elements take up the whole width of the screen, their width can be modified
+inline elements only take up as much width as required, their width cannot be modified
+inline-block elements only take up as much width as required, their width can be modified
+none means the selector disappears, there is no space allocated for it
+
+visibility: hidden means the selector disappears although there is space allocated for it
+
+position: static 
+elements are unaffected by the top/bottom/left/right properties
+
+position: relative 
+elements are moved up/down/right/left by the top/bottom/left/right properties respectively 
+they are moved relative to their original position
+moving a relative element does not affect the position of other elements
+
+postion: absolute 
+elements are moved top/bottom/left/right by the top/bottom/left/right properties respectively
+they are moved relative to their parent (the closest element with relative positioning, if there is no such element then 
+the body is taken as the parent)
+moving an absolute element does affect the position of other elements
+
+positon: fixed 
+elements stay in their positions as the page is scrolled
+
+font-family property
+serif letters contain feet
+sans-serif letters don't contain feet
+monospace characters all have equal width
+
+font-size property
+px is static (does not change when the font size of the browser is changed)
+100% is equivalent to 16px, % is dynamic (does change when the font size of the browser is changed)
+1 em is equivalent to 16px, em is dynamic
+
+dynamic sizing is good for accessibility
+
+dynamic sizes are inherited, static sizes aren't
+
+body{
+    font-size: 2em;
+    ...
+}
+
+h1{
+    font-size: 5em; 
+    ...
+}
+
+the 2em of the parent is added on to the 5em of the h1, so the h1 is actually 7em
+
+rem values are dynamic but ignore the parent's size settings*/
+
+body{
+    color: #40514E;
+    margin: 0;
+    text-align: center; /*centers elements inside that don't have a width set, margin: auto in elements with a width set centers them*/
+    font-family: 'Raleway',sans-serif; /*if Raleway is not rendered the browser will use sans-serif*/
+}
+
+h1{
+    color: #417D7A;
+    font-size: 2.7rem;
+    margin-bottom: 0;
+    font-family: 'Raleway',sans-serif;
+}
+
+h2{
+    color: #417D7A;
+    font-family: 'Questrial',sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h3{
+    color: #1A3C40;
+    font-family: 'Questrial',sans-serif;
+}
+
+p{
+    line-height: 1.5; /*1.5 times the current font size*/
+}
+
+hr{
+    border: dotted #1A3C40 6px;
+    border-bottom: none;
+    width: 10%; /*relative to its parent*/
+    margin: 70px auto;
+}
+
+a{
+    color: #417D7A;
+    font-family: 'Questrial',sans-serif;
+    margin: 10px 10px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #39AEA9;
+}
+
+.top-container{
+    background-color: #EDE6DB;
+    position: relative;
+    padding-top: 100px;
+}
+
+.middle-container{
+    padding: 100px 0;
+}
+
+.bottom-container{
+    background-color: #EDE6DB;
+    padding: 50px 0 20px;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 70px auto 70px auto;
+    text-align: left; /*overrides the body's center alignment of text*/
+}
+
+.pro{
+    text-decoration: underline;
+}
+
+.intro{
+    width: 30%;
+    margin: auto;
+}
+
+.contact-me{
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.copyright{
+    color: #39AEA9;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+.top-cloud{
+    position: absolute;
+    right: 370px;
+    top: 50px;
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 370px;
+    bottom: 400px;
+}
+
+.book-img{
+    width: 25%;
+    float: left; /*the image is placed on the left and the text wraps around it*/
+    margin-right: 20px;
+}
+
+/*clear: left ensures the text isn't wrapping around anything on its left
+clear: right ensures the text isnt't wrapping around anything on its right*/
+
+.camera-img{
+    width: 25%;
+    float: right;
+    margin-left: 20px;
+}
+
+.btn{
+    background: #39AEA9;
+    background-image: -webkit-linear-gradient(top,#39AEA9,#557B83);
+    background-image: -moz-linear-gradient(top,#39AEA9,#557B83);
+    background-image: -ms-linear-gradient(top,#39AEA9,#557B83);
+    background-image: -o-linear-gradient(top,#39AEA9,#557B83);
+    background-image: linear-gradient(to bottom,#39AEA9,#557B83);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Questrial',sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+  
+.btn:hover{
+    background: #A2D5AB;
+    background-image: -webkit-linear-gradient(top,#A2D5AB,#39AEA9);
+    background-image: -moz-linear-gradient(top,#A2D5AB,#39AEA9);
+    background-image: -ms-linear-gradient(top,#A2D5AB,#39AEA9);
+    background-image: -o-linear-gradient(top,#A2D5AB,#39AEA9);
+    background-image: linear-gradient(to bottom,#A2D5AB,#39AEA9);
+    text-decoration: none;
+}
