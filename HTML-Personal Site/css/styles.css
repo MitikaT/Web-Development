@@ -1,0 +1,50 @@
+/*priority order, inline css > internal css > external css*/
+
+/*tag selectors, overriden by class/id selectors*/
+h3{
+    color: #1A3C40;
+}
+
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #D0C9C0;
+    border-width: 5px;
+    width: 30%;
+}
+
+/*class selectors, you can have multiple instances of a specific class in the whole page
+
+<img class="abcd"...>
+
+.abcd{
+    ...
+}
+
+adding multiple classes to the same element
+
+<img class="ab cd"...>
+
+.ab{
+    ...
+}
+
+.cd{
+    ...
+}
+
+id selectors, you can only have one instance of a specific id in the whole page
+
+<img id="abcde"...>
+
+#abcde{
+    ...
+}
+
+you cannot add multiple ids to the same element
+
+pseudo-classes
+
+img:hover{
+    ...
+}*/
