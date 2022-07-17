@@ -1,0 +1,184 @@
+/*ids are the most specific and their styles get applied preferentially over everything else
+the next come classes
+and finally HTML elements
+
+h1{
+    color: red;
+    color: green;
+}
+h1 is green, the last css rule has priority over everything above it*/
+
+body{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{ /*applies the properties to all headings*/
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 900;
+}
+
+p{
+    color: #8f8f8f;
+}
+
+.big-heading{
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.container-fluid{
+    padding: 7% 15%; /*first value for the top and bottom edges, second for the left and right ones*/
+}
+
+.colored-section{
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.white-section{
+    background-color: #fff;
+}
+
+.navbar{
+    padding: 0 0 4.5rem; /*first value for the top edge, second for the left and right ones, third for the bottom*/
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+}
+
+.download-button{
+    margin: 5% 3% 5% 0; /*first value for the top edge, second for the right, third for the left, fourth for the bottom*/
+}
+
+#title .container-fluid{ /*for the container-fluid class contained inside the title section*/
+    padding: 3% 15% 7%;
+}
+
+/*selector1.selector2{ for the selector1 that has a class selector2
+    ...
+} 
+combines css properties for two elements occurring in the same element*/
+
+.title-image{
+    width: 60%;
+    transform: rotate(25deg); /*rotates the image*/
+    position: absolute;
+    right: 30%;
+}
+
+/*z-index
+can only be assigned to elements with a set position property that is not static (static is the default css position)
+1, above everything else
+-1, behind everything else
+0 is the default
+children sit on top of their parents
+whatever comes first in the HTML file is closer to the back
+if the same z-index value is assigned to two different elements the default rules are followed*/
+
+#features{
+    position: relative;
+}
+
+.feature-title{
+    font-size: 1.5rem;
+}
+
+.feature-box{
+    padding: 5%; /*one value for all the edges*/
+}
+
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color: #ff4c68;
+}
+
+#testimonials{
+    background-color: #ef8172;
+}
+
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press{
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+#pricing{
+    padding: 100px;
+}
+
+.price-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+}
+
+.social-icon{
+    margin: 20px 10px;
+}
+
+@media (max-width: 1020px){ /*breakpoint at 1020px*/
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        position: static;
+        transform: rotate(0); /*straightens the image*/
+    }
+}
+
+/*media queries include a block of css properties only if a certain condition is true
+
+@media(max-width: 900px){
+    ... for viewports 900px wide or smaller
+}
+
+@media(min-width: 900px){
+    ... for viewports 900 px wide or greater
+}
+
+@media(min-width: 900px) and (max-width: 1000px){
+    ... for viewports greater than 900px but less than 1000px
+}*/
