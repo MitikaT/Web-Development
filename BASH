@@ -1,0 +1,25 @@
+Bash (Bourne Again Shell) is a CLI (Command Line Interface) for the Unix system
+
+~ shows you're in the user directory
+
+echo hello prints hello
+
+ls lists the items in the current directory
+ls -a also shows the hidden items (preceeded by .) in the current directory
+
+cd abc/ changes the folder to abc inside the current folder
+cd ~ brings us back to the root (user) directory
+cd abc/def/ changes the folder to def which is inside folder abc which is inside the current folder
+cd .. takes us back one folder (if currently in abc/def/ it takes us to abc/)
+
+mkdir abc creates a folder named abc in the current directory
+mkdir .abc creates a hidden folder named abc in the current directory
+
+touch abc.txt creates a text file named abc in the current directory
+
+open abc opens the file abc using the default application
+open -a Atom abc.txt opens the file abc using the Atom editor
+
+rm abc.txt deletes the file abc
+rm * deletes all the files in the directory
+rm -r abc/ deletes the folder abc in the current directory
