@@ -4,6 +4,7 @@ Bash (Bourne Again Shell) is a CLI (Command Line Interface) for the Unix system
 
 echo hello prints hello
 
+pwd prints the current directory
 ls lists the items in the current directory
 ls -a also shows the hidden items (preceeded by .) in the current directory
 
@@ -21,5 +22,7 @@ open abc opens the file abc using the default application
 open -a Atom abc.txt opens the file abc using the Atom editor
 
 rm abc.txt deletes the file abc
-rm * deletes all the files in the directory
+rm * deletes all the files in the current directory
 rm -r abc/ deletes the folder abc in the current directory
+
+npm init sets up a new npm package in the current directory
