@@ -12,14 +12,11 @@ Math.floor(Math.random() * n) + 1 returns a random whole number between 1 and n 
 var randomNumber1=Math.floor(Math.random()*6)+1;
 var randomDiceImage1="dice"+randomNumber1+".png";
 var randomImageSource1="images/"+randomDiceImage1;
-
 var image1=document.querySelectorAll("img")[0];
 image1.setAttribute("src",randomImageSource1);
-
 var randomNumber2=Math.floor(Math.random()*6)+1;
 var randomDiceImage2="dice"+randomNumber2+".png";
 var randomImageSource2="images/"+randomDiceImage2;
-
 var image1=document.querySelectorAll("img")[1];
 image1.setAttribute("src",randomImageSource2);
 
