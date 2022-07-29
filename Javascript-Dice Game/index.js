@@ -8,6 +8,7 @@ they cannot begin with a number
 Math.random() returns a random number between 0 and 1, including zero but not including 1
 Math.random() * n returns a random number between 0 and n, including zero but not including n
 Math.floor(Math.random() * n) + 1 returns a random whole number between 1 and n including both 1 and n*/
+
 var randomNumber1=Math.floor(Math.random()*6)+1;
 var randomDiceImage1="dice"+randomNumber1+".png";
 var randomImageSource1="images/"+randomDiceImage1;
